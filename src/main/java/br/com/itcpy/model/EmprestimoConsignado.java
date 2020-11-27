@@ -6,16 +6,17 @@ import lombok.Data;
 @Data
 public class EmprestimoConsignado implements Emprestimo {
 
+	private String nome;
 	private int taxaJuros;
 
 	public EmprestimoConsignado() {
+		this.nome = "Consignado";
 		this.taxaJuros = 2;
 	}
 
 	@Override
 	public boolean concesscao(Cliente cliente) {
-		// TODO Auto-generated method stub
-		return false;
+		return cliente.getSalario() >= 5000;
 	}
 
 }

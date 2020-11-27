@@ -12,12 +12,10 @@ public class Cliente {
 	private String nome;
 	private String cpf;
 	private int idade;
-	private char[] uf;
+	private char[] uf = new char[2];
 	private float salario;
-
 	private List<Modalidade> modalidades;
 
-//	Regra de negocio. Por default todos os clientes tem direito ao emprestimo pessoal
 	public Cliente() {
 		this.modalidades = new ArrayList<>();
 	}
