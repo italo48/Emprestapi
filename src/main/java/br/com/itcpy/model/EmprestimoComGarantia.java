@@ -23,7 +23,7 @@ public class EmprestimoComGarantia implements Emprestimo {
 				|| (cliente.getSalario() > 3000 && cliente.getSalario() < 5000 && isCe)
 				|| (cliente.getSalario() >= 5000 && idade)) {
 			return true;
-		}
+		}	
 		return false;
 	}
 
