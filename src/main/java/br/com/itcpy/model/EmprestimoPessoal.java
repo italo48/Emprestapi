@@ -15,8 +15,7 @@ public class EmprestimoPessoal implements Emprestimo {
 
 	@Override
 	public boolean concesscao(Cliente cliente) {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 }
