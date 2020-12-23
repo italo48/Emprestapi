@@ -1,17 +1,14 @@
 package br.com.itcpy.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-
 import br.com.itcpy.model.Cliente;
 import br.com.itcpy.model.ResultadoAvaliacao;
 import br.com.itcpy.service.imp.EmprestimoServiceImp;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class EmprestimoController {
 
 	@Autowired
@@ -22,7 +19,7 @@ public class EmprestimoController {
 		return ResponseEntity.ok("Emprestapi V1");
 	}
 
-	@PostMapping("/v1/avaliar")
+	@PostMapping("/avaliar")
 	public ResponseEntity<ResultadoAvaliacao> avaliarEmprestimo(@RequestBody Cliente cliente) {
 
 		emprestimoService.adicionaModalidade(cliente);

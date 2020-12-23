@@ -1,13 +1,8 @@
 package br.com.itcpy.service.imp;
 
-import org.springframework.stereotype.Service;
-
-import br.com.itcpy.model.Cliente;
-import br.com.itcpy.model.EmprestimoComGarantia;
-import br.com.itcpy.model.EmprestimoConsignado;
-import br.com.itcpy.model.EmprestimoPessoal;
-import br.com.itcpy.model.Modalidade;
+import br.com.itcpy.model.*;
 import br.com.itcpy.service.EmprestimoService;
+import org.springframework.stereotype.Service;
 
 @Service
 public class EmprestimoServiceImp implements EmprestimoService {
