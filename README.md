@@ -7,7 +7,7 @@
 
 #### Descrição
 
-Api de avaliação de concessão de emprestimos. Isso foi um exercicio passado pelo [Dougllas Sousa](https://www.udemy.com/user/dougllas-sousa/).
+Api de avaliação de concessão de emprestimos. Desafio proposto pelo [Dougllas Sousa](https://www.udemy.com/user/dougllas-sousa/).
 
 #### Recursos
 
